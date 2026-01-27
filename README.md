@@ -33,3 +33,5 @@ It's pretty simple to use, and most values are self-explanitory. "Dual Colour To
 
 > [!WARNING]
 > I would advise against using any floating-point value on any of the "booleans", just stick to 0 or 1.
+
+Basically, to use it, open your Unreal Engine project and place the UEPixelPerfect folder anywhere, so long as it is in the Content folder. To use, create a Post Process Volume, go down to Rendering Features, add a new Post Process Material and set the material to one of the examples, found in UEPixelPerfect/Examples. Alternatively, create your own material instance of M_PixelPerfect and change the settings yourself.
