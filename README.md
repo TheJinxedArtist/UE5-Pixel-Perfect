@@ -13,14 +13,16 @@ At it's core, UEPP replaces the tonemapper with a simple Linear -> sRGB conversi
 - Dithering (with dither textures, 4x4 bayer matrix & blue noise included)
 - Dual colour toning
 
-## Image Resolution Scaling
+### Image Resolution Scaling
 It's as simple as it sounds: scale the resolution of the screen. Use a 0-1 value to control the scaling, with 0 being no resolution, 0.5 being 50% of the original resolution, and 1 (default) being the source resolution.
 
-## Colour Quantization
+### Colour Quantization
 Despite the scary big word, it basically means "reduce the number of colours on screen". Default is 1024, but realistically for any effect use 8, 16, 32, etc...
 
-## Dithering
+### Dithering
 Dithering works right beside colour quantization to smooth out the harsh steps using a dither pattern, with a 4x4 bayer matrix & blue noise pattern included by default.
 
-## Dual Colour Toning
+### Dual Colour Toning
 Blend between two colours based on the image's luminance. You can optionally use HSV blending for a more colourful result, and it already works with colour quantization and dithering.
+
+## How To Use
