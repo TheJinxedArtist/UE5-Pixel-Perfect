@@ -27,4 +27,4 @@ Blend between two colours based on the image's luminance. You can optionally use
 
 ## How To Use
 
-![An image of the material editor within Unreal Engine 5.](main/images/material-editing.png)
+![An image of the material editor within Unreal Engine 5.](images/material-editing.png)
