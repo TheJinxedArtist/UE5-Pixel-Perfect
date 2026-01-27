@@ -31,5 +31,5 @@ Blend between two colours based on the image's luminance. You can optionally use
 
 It's pretty simple to use, and most values are self-explanitory. "Dual Colour Toning", "HSV Blending" and "Fast Linear to sRGB" act as booleans, though we cannot use boolean values as shader properties, so they are shown as 0-1 floats.
 
-[!WARNING]
-I would advise against using any floating-point value on any of the "booleans", just stick to 0 or 1.
+> [!WARNING]
+> I would advise against using any floating-point value on any of the "booleans", just stick to 0 or 1.
