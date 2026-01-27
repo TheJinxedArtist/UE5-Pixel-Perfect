@@ -26,3 +26,5 @@ Dithering works right beside colour quantization to smooth out the harsh steps u
 Blend between two colours based on the image's luminance. You can optionally use HSV blending for a more colourful result, and it already works with colour quantization and dithering.
 
 ## How To Use
+
+![An image of the material editor within Unreal Engine 5.](main/images/material-editing.png)
