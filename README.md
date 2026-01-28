@@ -41,6 +41,20 @@ Dithering works right beside colour quantization to smooth out the harsh steps u
 ### Dual Colour Toning
 Blend between two colours based on the image's luminance. You can optionally use HSV blending for a more colourful result, and it already works with colour quantization and dithering.
 
+## General Advice
+
+### 2D
+For 2D pixel art, I would advice against using anything but the default MI_PixelPerfectBase, all that's really needed is the colour correction that comes with it by default. Lowering the resolution and decreasing the number of colours can ruin the pixel art, and generally you won't need to do any other colour effects.
+
+### 3D
+You can use any of the effects in 3D, play with it as you wish, but there are a few things I would advice for more retro games to do with Unreal Engine itself.
+- Lumen isn't really needed, especially with pixel art.
+- I would personally make your materials use the M_PixelPerfectSurface material as a base, as it removes all unnecessary lighting effects, that'll just get lost in the effects anyway.
+- On your lights, set the Intensity Units to Unitless and use values like 1 or 4 or whatever, but also make sure to, under Advanced, disable Use Inverse Squared Falloff, as it will make your lights really hard to work with.
+- On your PostProcessVolume, under Exposure, set Metering Mode to Manual, you won't need auto exposure with the different light setup.
+
+There are a few other things as well, like ideally not having a Sky Light in the scene when using the included M_PixelPerfectSurface, as it has it's own ambient lighting option, but reallistically just do what you want.
+
 ## Updates
 
 ### v1.0
