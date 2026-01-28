@@ -72,3 +72,12 @@ Changed:
 
 Other:
 - There's now a big Custom node where I tried to write it all out in HLSL, but I can't find any good doccumentation so it's just left there unused for now.
+
+### v1.2
+Added:
+- Support for Unreal's bloom (it works a bit weirdly and bloom is likely to be added to the entire image (Unreal expects very large values, like 100000 for the sun's intensity, but it looks alright in moderation).
+
+Changed:
+- Fixed some of the examples to actually be the correct examnples (I was messing with them and forgot to change them back after editing).
+
+![Bloom in my test scene.](images/bloom-support.jpg)
