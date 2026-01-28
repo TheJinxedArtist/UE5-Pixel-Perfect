@@ -19,6 +19,8 @@ Unreal Engine is primarily designed for developing realistic 3D games, and while
 
 UE Pixel Perfect aims to solve this issue, and adds some artistic utilities, so that people can see your game in the way you intended.
 
+![An example of most of the effects being used at the same time.](images/example-green.jpg)
+
 At it's core, UEPP replaces the tonemapper with a simple Linear -> sRGB conversion, immediately restoring the original and artist-intended colours. But realistically, too many things are made separate these days (cough cough Maya, Photoshop, Substance Painter cough cough), and so the material includes plenty of other effects, as listed here:
 
 - Linear -> sRGB conversion (duh)
