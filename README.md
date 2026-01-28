@@ -7,9 +7,6 @@ A material post processing effect for Unreal Engine 5 for pixel-based games.
 
 It's pretty simple to use, and most values are self-explanitory. "Dual Colour Toning", "HSV Blending" and "Fast Linear to sRGB" act as booleans, though we cannot use boolean values as shader properties, so they are shown as 0-1 floats.
 
-> [!WARNING]
-> I would advise against using any floating-point value on any of the "booleans", just stick to 0 or 1.
-
 Basically, to use it, open your Unreal Engine project in the file explorer (make sure Unreal Engine is closed). Under Content, create a "Graphics" folder (including capital G) and copy the UEPixelPerfect folder into this Graphics folder.
 
 The reason for this specific layout is because Unreal Engine throws a bit of a hissy fit if you don't copy things and paste them with the *exact* same path, I tend to put all generic effects into a Graphics folder, and so you're forced to do it too.
@@ -41,3 +38,21 @@ Dithering works right beside colour quantization to smooth out the harsh steps u
 
 ### Dual Colour Toning
 Blend between two colours based on the image's luminance. You can optionally use HSV blending for a more colourful result, and it already works with colour quantization and dithering.
+
+## Updates
+
+### v1.0
+Initial project
+
+### v1.1
+Added:
+- PixelPerfectSurface material base, specifically for 3D retro projects. Includes option for PSX-style texture distortion (Affine texture mapping).
+
+Changed:
+- "Boolean" floats act more as booleans, and don't require exactly 0 or 1 (threshold of 0.5).
+- Linear sRGB "fast" conversion changed to use gamma 2.4, which I hear is correct (not sure though as there's no doccumentation).
+- Luminance calculation for Dual Colour Toning changed to use linear values, which is the correct method.
+- Dual Colour Toning brightness & contrast options.
+
+Other:
+- There's now a big Custom node where I tried to write it all out in HLSL, but I can't find any good doccumentation so it's just left there unused for now.
