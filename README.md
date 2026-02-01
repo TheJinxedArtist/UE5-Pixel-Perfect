@@ -75,7 +75,7 @@ Other:
 
 ### v1.2
 Added:
-- Support for Unreal's bloom (it works a bit weirdly and bloom is likely to be added to the entire image (Unreal expects very large values, like 100000 for the sun's intensity, but it looks alright in moderation).
+- Support for Unreal's bloom (it works a bit weird, Unreal expects very large values, but it looks alright in moderation).
 
 Changed:
 - Fixed some of the examples to actually be the correct examnples (I was messing with them and forgot to change them back after editing).
